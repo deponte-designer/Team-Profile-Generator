@@ -15,3 +15,31 @@ const render = require("./src/page-template.js");
 
 // Array to store team members
 const teamMembers = [];
+
+// Function to prompt for manager details
+function promptManager() {
+    inquirer
+      .prompt([
+        {
+          type: "input",
+          name: "name",
+          message: "Enter the team manager's name:",
+        },
+        {
+          type: "input",
+          name: "id",
+          message: "Enter the team manager's employee ID:",
+        },
+        {
+          type: "input",
+          name: "email",
+          message: "Enter the team manager's email address:",
+        },
+        {
+          type: "input",
+          name: "officeNumber",
+          message: "Enter the team manager's office number:",
+        },
+      ])
+
+}
