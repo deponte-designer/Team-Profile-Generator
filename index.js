@@ -93,3 +93,70 @@ function promptEngineer() {
         promptMenu();
       });
   }
+
+  // Function to prompt for intern details
+function promptIntern() {
+    inquirer
+      .prompt([
+        {
+          type: "input",
+          name: "name",
+          message: "Enter the intern's name:",
+        },
+        {
+          type: "input",
+          name: "id",
+          message: "Enter the intern's employee ID:",
+        },
+        {
+          type: "input",
+          name: "email",
+          message: "Enter the intern's email address:",
+        },
+        {
+          type: "input",
+          name: "school",
+          message: "Enter the intern's school:",
+        },
+      ])
+      .then((answers) => {
+        // Create an Intern object and add it to the teamMembers array
+        const intern = new Intern(
+          answers.name,
+          answers.id,
+          answers.email,
+          answers.school
+        );
+        teamMembers.push(intern);
+        // Move to the next step in the menu
+        promptMenu();
+      });
+  }
+
+  // Function to prompt user with menu options
+function promptMenu() {
+    inquirer
+      .prompt([
+        {
+          type: "list",
+          name: "menu",
+          message: "What would you like to do?",
+          choices: ["Add an engineer", "Add an intern", "Finish building the team"],
+        },
+      ])
+      .then((answers) => {
+        // Based on the user's choice, call the appropriate function
+        switch (answers.menu) {
+          case "Add an engineer":
+            promptEngineer();
+            break;
+          case "Add an intern":
+            promptIntern();
+            break;
+          case "Finish building the team":
+            // Generate the HTML and finish the process
+            generateHTML();
+            break;
+        }
+      });
+  }
