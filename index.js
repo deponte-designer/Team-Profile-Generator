@@ -18,150 +18,150 @@ const teamMembers = [];
 
 // Function to prompt for manager details
 function promptManager() {
-    inquirer
-      .prompt([
-        {
-          type: "input",
-          name: "name",
-          message: "Enter the team manager's name:",
-        },
-        {
-          type: "input",
-          name: "id",
-          message: "Enter the team manager's employee ID:",
-        },
-        {
-          type: "input",
-          name: "email",
-          message: "Enter the team manager's email address:",
-        },
-        {
-          type: "input",
-          name: "officeNumber",
-          message: "Enter the team manager's office number:",
-        },
-      ])
-      .then((answers) => {
-        // Create a Manager object and add it to the teamMembers array
-        const manager = new Manager(
-          answers.name,
-          answers.id,
-          answers.email,
-          answers.officeNumber
-        );
-        teamMembers.push(manager);
-        // Move to the next step in the menu
-        promptMenu();
-      });
+  inquirer
+    .prompt([
+      {
+        type: "input",
+        name: "name",
+        message: "Enter the team manager's name:",
+      },
+      {
+        type: "input",
+        name: "id",
+        message: "Enter the team manager's employee ID:",
+      },
+      {
+        type: "input",
+        name: "email",
+        message: "Enter the team manager's email address:",
+      },
+      {
+        type: "input",
+        name: "officeNumber",
+        message: "Enter the team manager's office number:",
+      },
+    ])
+    .then((answers) => {
+      // Create a Manager object and add it to the teamMembers array
+      const manager = new Manager(
+        answers.name,
+        answers.id,
+        answers.email,
+        answers.officeNumber
+      );
+      teamMembers.push(manager);
+      // Move to the next step in the menu
+      promptMenu();
+    });
 }
 
 // Function to prompt for engineer details
 function promptEngineer() {
-    inquirer
-      .prompt([
-        {
-          type: "input",
-          name: "name",
-          message: "Enter the engineer's name:",
-        },
-        {
-          type: "input",
-          name: "id",
-          message: "Enter the engineer's employee ID:",
-        },
-        {
-          type: "input",
-          name: "email",
-          message: "Enter the engineer's email address:",
-        },
-        {
-          type: "input",
-          name: "github",
-          message: "Enter the engineer's GitHub username:",
-        },
-      ])
-      .then((answers) => {
-        // Create an Engineer object and add it to the teamMembers array
-        const engineer = new Engineer(
-          answers.name,
-          answers.id,
-          answers.email,
-          answers.github
-        );
-        teamMembers.push(engineer);
-        // Move to the next step in the menu
-        promptMenu();
-      });
-  }
+  inquirer
+    .prompt([
+      {
+        type: "input",
+        name: "name",
+        message: "Enter the engineer's name:",
+      },
+      {
+        type: "input",
+        name: "id",
+        message: "Enter the engineer's employee ID:",
+      },
+      {
+        type: "input",
+        name: "email",
+        message: "Enter the engineer's email address:",
+      },
+      {
+        type: "input",
+        name: "github",
+        message: "Enter the engineer's GitHub username:",
+      },
+    ])
+    .then((answers) => {
+      // Create an Engineer object and add it to the teamMembers array
+      const engineer = new Engineer(
+        answers.name,
+        answers.id,
+        answers.email,
+        answers.github
+      );
+      teamMembers.push(engineer);
+      // Move to the next step in the menu
+      promptMenu();
+    });
+}
 
-  // Function to prompt for intern details
+// Function to prompt for intern details
 function promptIntern() {
-    inquirer
-      .prompt([
-        {
-          type: "input",
-          name: "name",
-          message: "Enter the intern's name:",
-        },
-        {
-          type: "input",
-          name: "id",
-          message: "Enter the intern's employee ID:",
-        },
-        {
-          type: "input",
-          name: "email",
-          message: "Enter the intern's email address:",
-        },
-        {
-          type: "input",
-          name: "school",
-          message: "Enter the intern's school:",
-        },
-      ])
-      .then((answers) => {
-        // Create an Intern object and add it to the teamMembers array
-        const intern = new Intern(
-          answers.name,
-          answers.id,
-          answers.email,
-          answers.school
-        );
-        teamMembers.push(intern);
-        // Move to the next step in the menu
-        promptMenu();
-      });
-  }
+  inquirer
+    .prompt([
+      {
+        type: "input",
+        name: "name",
+        message: "Enter the intern's name:",
+      },
+      {
+        type: "input",
+        name: "id",
+        message: "Enter the intern's employee ID:",
+      },
+      {
+        type: "input",
+        name: "email",
+        message: "Enter the intern's email address:",
+      },
+      {
+        type: "input",
+        name: "school",
+        message: "Enter the intern's school:",
+      },
+    ])
+    .then((answers) => {
+      // Create an Intern object and add it to the teamMembers array
+      const intern = new Intern(
+        answers.name,
+        answers.id,
+        answers.email,
+        answers.school
+      );
+      teamMembers.push(intern);
+      // Move to the next step in the menu
+      promptMenu();
+    });
+}
 
-  // Function to prompt user with menu options
+// Function to prompt user with menu options
 function promptMenu() {
-    inquirer
-      .prompt([
-        {
-          type: "list",
-          name: "menu",
-          message: "What would you like to do?",
-          choices: ["Add an engineer", "Add an intern", "Finish building the team"],
-        },
-      ])
-      .then((answers) => {
-        // Based on the user's choice, call the appropriate function
-        switch (answers.menu) {
-          case "Add an engineer":
-            promptEngineer();
-            break;
-          case "Add an intern":
-            promptIntern();
-            break;
-          case "Finish building the team":
-            // Generate the HTML and finish the process
-            generateHTML();
-            break;
-        }
-      });
-  }
+  inquirer
+    .prompt([
+      {
+        type: "list",
+        name: "menu",
+        message: "What would you like to do?",
+        choices: ["Add an engineer", "Add an intern", "Finish building the team"],
+      },
+    ])
+    .then((answers) => {
+      // Based on the user's choice, call the appropriate function
+      switch (answers.menu) {
+        case "Add an engineer":
+          promptEngineer();
+          break;
+        case "Add an intern":
+          promptIntern();
+          break;
+        case "Finish building the team":
+          // Generate the HTML and finish the process
+          generateHTML();
+          break;
+      }
+    });
+}
 
-  // Function to generate HTML using the render function and write it to a file
+// Function to generate HTML using the render function and write it to a file
 function generateHTML() {
     const html = render(teamMembers);
     // Check if the output directory exists, create it if not
