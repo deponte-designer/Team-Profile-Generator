@@ -160,3 +160,18 @@ function promptMenu() {
         }
       });
   }
+
+  // Function to generate HTML using the render function and write it to a file
+function generateHTML() {
+    const html = render(teamMembers);
+    // Check if the output directory exists, create it if not
+    if (!fs.existsSync(OUTPUT_DIR)) {
+      fs.mkdirSync(OUTPUT_DIR);
+    }
+    // Write the HTML to the specified output file
+    fs.writeFileSync(outputPath, html);
+    console.log(`Team HTML generated at ${outputPath}`);
+  }
+  
+  // Start the process by prompting for manager details
+  promptManager();
