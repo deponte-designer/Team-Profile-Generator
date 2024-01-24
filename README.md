@@ -74,3 +74,8 @@ If you need you can:
 ```bash
 clear
 ```
+
+## Credits
+* [Jestjs.io](https://jestjs.io/)
+* [Professional README Guide](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide) 
+* [Badges Documentation by Shields.io](https://shields.io/docs/logos)
