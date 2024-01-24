@@ -107,8 +107,8 @@ To run Jest tests, execute the following command in the terminal:
 ```bash
 npm run test
 ```
-
-*Jest Test Results - Successful Execution*
+![Jest Test Results Screenshot](./assets/images/team-generator-test.png)
+*The screenshot captures the output of the npm run test command for the Team Profile Generator project.*
 
 ## Questions
 > For any questions or concerns about the project, you can reach me at [GitHub: dePonte](https://github.com/deponte-designer). 
