@@ -17,3 +17,9 @@ This project is a Test-Driven Development: Team Profile Generator designed to st
 - [Questions](#questions)
 - [License](#license)
 - [Badges](#badges)
+
+## User Story
+**As A** developer,  
+**I WANT** a tool to generate a team profile,  
+**SO THAT** I can easily organize and view information about my team members.
+
