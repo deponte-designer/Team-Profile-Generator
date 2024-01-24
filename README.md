@@ -90,9 +90,9 @@ clear
 To contribute to this project, follow these steps:
 
 1. Fork the repository.
-2. Create a new branch for your feature (git checkout -b feature-name).
-3. Commit your changes (git commit -m 'Add feature').
-4. Push to the branch (git push origin feature-name).
+2. Create a new branch for your feature (`git checkout -b feature-name`).
+3. Commit your changes (`git commit -m 'Add feature'`).
+4. Push to the branch (`git push origin feature-name`).
 5. Create a new pull request.
 
 ### Contributions
@@ -101,3 +101,10 @@ This project was developed by a single contributor [dePonte](https://github.com/
 ### Starred Project
 ⭐ Your support by clicking on the star icon located at the top right of the project page and adding it to your favourites list would be greatly appreciated!
 
+## Tests
+To run Jest tests, execute the following command in the terminal:
+```bash
+npm run test
+```
+
+*Jest Test Results - Successful Execution*
