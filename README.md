@@ -95,3 +95,9 @@ To contribute to this project, follow these steps:
 4. Push to the branch (git push origin feature-name).
 5. Create a new pull request.
 
+### Contributions
+This project was developed by a single contributor [dePonte](https://github.com/deponte-designer).
+
+### Starred Project
+⭐ Your support by clicking on the star icon located at the top right of the project page and adding it to your favourites list would be greatly appreciated!
+
