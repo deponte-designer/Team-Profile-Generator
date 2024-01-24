@@ -53,3 +53,7 @@ Create a file named `.gitignore` to specify files and directories that should be
 node_modules
 ```
 
+## Screenshots
+
+![Team Generator User Inputs Screenshot](./assets/images/team-generator-user-input.png)
+*The screenshot illustrate the command-line interaction with the Team Profile Generator application.*
