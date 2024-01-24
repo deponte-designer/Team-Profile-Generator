@@ -86,3 +86,12 @@ clear
 > - [GitHub Repository](https://github.com/deponte-designer/Team-Profile-Generator "Team-Profile-Generator GitHub Repository"): Visit the repository for project details, including a comprehensive README.
 > - [Sample HTML](https://github.com/deponte-designer/Team-Profile-Generator/blob/main/output/team.html "The output HTML file"): Visit this link to view the team.html file generated using the application.
 
+## How to Contribute
+To contribute to this project, follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature (git checkout -b feature-name).
+3. Commit your changes (git commit -m 'Add feature').
+4. Push to the branch (git push origin feature-name).
+5. Create a new pull request.
+
