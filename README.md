@@ -54,6 +54,23 @@ node_modules
 ```
 
 ## Screenshots
-
-![Team Generator User Inputs Screenshot](./assets/images/team-generator-user-input.png)
+![Team Generator User Input Screenshot](./assets/images/team-generator-user-input.png)
 *The screenshot illustrate the command-line interaction with the Team Profile Generator application.*
+
+## Usage
+
+To use the Team Profile Generator, run the command `node index.js` in the terminal. Follow the prompts to provide information about your team, and the generator will create the `team.html` file based on your input.
+
+1. Run the application:
+```bash
+node index.js
+```
+If you need you can:
+1. Stop the application:
+```bash
+^C
+```
+2. Clear the terminal:
+```bash
+clear
+```
