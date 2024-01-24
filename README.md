@@ -56,6 +56,9 @@ node_modules
 ## Screenshots
 ![Team Generator User Input Screenshot](./assets/images/team-generator-user-input.png)
 *The screenshot illustrate the command-line interaction with the Team Profile Generator application.*
+![Team HTML Generator Screenshot](./assets/images/team-generator-html.png)
+*This screenshot showcases the HTML output of the application, enhanced with added styling for a visually appealing presentation.*
+
 
 ## Usage
 
