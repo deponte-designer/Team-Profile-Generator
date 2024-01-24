@@ -108,3 +108,11 @@ npm run test
 ```
 
 *Jest Test Results - Successful Execution*
+
+## Questions
+> For any questions or concerns about the project, you can reach me at [GitHub: dePonte](https://github.com/deponte-designer). 
+
+
+## License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
+Copyright &copy; 2024 [dePonte](https://github.com/deponte-designer)
