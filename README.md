@@ -76,6 +76,7 @@ clear
 ```
 
 ## Credits
+* [npm Inquirer.js](https://www.npmjs.com/package/inquirer)
 * [Jestjs.io](https://jestjs.io/)
 * [Professional README Guide](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide) 
 * [Badges Documentation by Shields.io](https://shields.io/docs/logos)
