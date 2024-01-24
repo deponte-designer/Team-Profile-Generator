@@ -79,3 +79,10 @@ clear
 * [Jestjs.io](https://jestjs.io/)
 * [Professional README Guide](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide) 
 * [Badges Documentation by Shields.io](https://shields.io/docs/logos)
+
+## Deployment
+> This project is deployed and accessible at the following URLs:
+> 
+> - [GitHub Repository](https://github.com/deponte-designer/Team-Profile-Generator "Team-Profile-Generator GitHub Repository"): Visit the repository for project details, including a comprehensive README.
+> - [Sample HTML](https://github.com/deponte-designer/Team-Profile-Generator/blob/main/output/team.html "The output HTML file"): Visit this link to view the team.html file generated using the application.
+
